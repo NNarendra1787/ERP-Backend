@@ -82,7 +82,7 @@ const express = require("express");
 const InvoiceRouter = express.Router();
 const Invoice = require("../Models/Invoice");
 const SalesOrder = require("../Models/SalesOrder");
-const auth = require("../Middleware/auth");
+const auth = require("../Middleware/authentication");
 const permit = require("../Middleware/roles");
 
 const makeInvoiceNumber = async () => {

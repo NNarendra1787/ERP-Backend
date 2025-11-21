@@ -3,7 +3,7 @@ const ReportRouters = express.Router();
 
 const SalesOrder = require("../Models/SalesOrder");
 const PurchaseOrder = require("../Models/PurchaseOrder");
-const auth = require("../Middleware/auth");
+const auth = require("../Middleware/authentication");
 const permit = require("../Middleware/roles");
 
 // Sales Report

@@ -5,7 +5,7 @@ const GRN = require("../Models/GRN");
 const PurchaseOrder = require("../Models/PurchaseOrder");
 const Product = require("../Models/Product");
 
-const auth = require("../Middleware/auth");
+const auth = require("../Middleware/authentication");
 const permit = require("../Middleware/roles");
 
 // Generate GRN number
