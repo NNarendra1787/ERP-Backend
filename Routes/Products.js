@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Product = require("../Models/Product")
 const auth = require('../Middleware/authentication');
-const permit = require('../middleware/roles');
+const permit = require('../Middleware/roles');
 
 // GET /api/products
 router.get('/', auth, async (req,res) => {

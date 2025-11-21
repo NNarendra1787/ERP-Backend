@@ -24,6 +24,11 @@ app.use("/api/suppliers", require("./Routes/Supliers"))
 app.use("/api/sales-orders", require("./Routes/SalesOrders"));
 app.use("/api/purchase-orders", require("./Routes/PurchaseOrders"));
 app.use('/api/invoices', require('./Routes/Invoices'));
+app.use("/api/grn", require("./Routes/GRNRoutes"));
+app.use("/api/reports", require("./Routes/Reports"));
+app.use("/api/users", require("./Routes/Users"));
+
+
 
 
 

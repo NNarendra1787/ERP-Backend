@@ -3,8 +3,8 @@ const POrderRouter = express.Router();
 
 const PurchaseOrder = require("../Models/PurchaseOrder");
 const Product = require("../Models/Product");
-const auth = require("../middleware/authentication");
-const permit = require("../middleware/roles");
+const auth = require("../Middleware/authentication");
+const permit = require("../Middleware/roles");
 
 // GET all Purchase Orders
 POrderRouter.get("/", auth, async (req, res) => {
