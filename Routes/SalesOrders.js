@@ -1,8 +1,8 @@
 const express = require("express");
 const SOrderRoute = express.Router();
 const SalesOrder = require("../Models/SalesOrder")
-const auth = require("../middleware/authentication");
-const permit = require("../middleware/roles");
+const auth = require("../Middleware/authentication");
+const permit = require("../Middleware/roles");
 
 // Get all Sales Orders
 SOrderRoute.get("/", auth, async (req, res) => {
