@@ -1,8 +1,8 @@
 const express = require('express');
 const customerRouter = express.Router();
 const Customer = require("../Models/Customer");
-const auth = require("../middleware/authentication")
-const permit = require("../middleware/roles");
+const auth = require("../Middleware/authentication")
+const permit = require("../Middleware/roles");
 
 // ✅ Get all customers
 customerRouter.get("/", auth, async (req, res) => {
